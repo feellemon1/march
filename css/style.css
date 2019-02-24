@@ -1,59 +1,176 @@
-/*
-Error: File to import not found or unreadable: ./component/contents.
-        on line 9 of scss/style.scss
+* {
+  margin: 0px;
+  padding: 0px; }
 
-4: @import './func/mixin';
-5: 
-6: 
-7: @import './component/header';
-8: @import './component/visual';
-9: @import './component/contents';
-10: @import './component/footer';
+ul, ol, lli {
+  list-style: none; }
 
-Backtrace:
-scss/style.scss:9
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/tree/import_node.rb:44:in `import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: ./component/contents.\A         on line 9 of scss/style.scss\A \A 4: @import './func/mixin';\A 5: \A 6: \A 7: @import './component/header';\A 8: @import './component/visual';\A 9: @import './component/contents';\A 10: @import './component/footer';"; }
+a {
+  outline: 1;
+  text-decoration: none; }
+
+.headerWrap {
+  width: 100%;
+  background: url(../img/bgHeader.png) repeat-x 0px 0px;
+  transition: all 0.5s; }
+  .headerWrap #header {
+    width: 940px;
+    height: 118px;
+    margin: 0px auto;
+    position: relative; }
+
+/*tablet*/
+@media screen and (max-width: 960px) {
+  .headerWrap {
+    margin-top: -37px; }
+    .headerWrap #header {
+      width: 100%; } }
+#visual {
+  width: 100%;
+  height: 500px;
+  background: lightcyan;
+  position: relative;
+  transition: all 0.5s; }
+
+/*tablet*/
+@media screen and (max-width: 960px) {
+  #visual {
+    height: 350px;
+    background: orange; } }
+/*mobile*/
+@media screen and (max-width: 540px) {
+  #visual {
+    height: 280px;
+    background: lightgreen; } }
+#contents {
+  width: 940px;
+  margin: 50px auto 80px; }
+  #contents::after {
+    content: '';
+    display: block;
+    clear: both; }
+  #contents > div > h2 {
+    font: bold 18px/1 'arial';
+    color: #444;
+    margin-bottom: 25px;
+    padding-top: 15px;
+    position: relative; }
+    #contents > div > h2::before {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 2px;
+      background: #444;
+      position: absolute;
+      top: 0px;
+      left: 0px; }
+  #contents > div::after {
+    content: '';
+    display: block;
+    clear: both; }
+  #contents .con1 {
+    width: 100%;
+    height: 380px;
+    margin-bottom: 50px; }
+    #contents .con1 > div {
+      width: 100%;
+      height: 320px;
+      background: #444; }
+  #contents .con2 {
+    width: 100%;
+    margin-bottom: 50px; }
+    #contents .con2 > div {
+      width: 300px;
+      float: left;
+      margin-right: 20px; }
+      #contents .con2 > div:last-child {
+        margin-right: 0px; }
+      #contents .con2 > div .pic {
+        width: 100%;
+        height: 160px;
+        background: #444;
+        margin-bottom: 20px; }
+      #contents .con2 > div h3 {
+        font: bold 15px/1 'arial';
+        color: #555;
+        margin-bottom: 12px; }
+      #contents .con2 > div p {
+        font: 12px/1.2 'arial';
+        color: #777;
+        letter-spacing: 2px; }
+  #contents .con3 {
+    width: 460px;
+    float: left;
+    margin-right: 20px; }
+    #contents .con3 > div {
+      width: 220px;
+      height: 115px;
+      background: #444;
+      float: left;
+      margin-right: 20px; }
+      #contents .con3 > div:last-child {
+        margin-right: 0px; }
+  #contents .con4 {
+    width: 460px;
+    float: left; }
+    #contents .con4 > div {
+      width: 100%; }
+      #contents .con4 > div ul > li {
+        width: 100%; }
+        #contents .con4 > div ul > li::after {
+          content: '';
+          display: block;
+          clear: both; }
+        #contents .con4 > div ul > li a {
+          float: left;
+          font: 14px/1.7 'arial';
+          color: #666; }
+        #contents .con4 > div ul > li span {
+          float: right;
+          font: 13px/1.7 'arial';
+          color: #999; }
+
+/*tablet*/
+@media screen and (max-width: 960px) {
+  #contents {
+    width: 100%;
+    padding: 0px 30px;
+    box-sizing: border-box; }
+    #contents .con2 > div {
+      width: 32%;
+      margin-right: 2%; }
+    #contents .con3 {
+      width: 49%;
+      margin-right: 2%; }
+      #contents .con3 > div {
+        width: 49%;
+        margin-right: 2%; }
+    #contents .con4 {
+      width: 49%; } }
+/*mobile*/
+@media screen and (max-width: 540px) {
+  #contents .con2 > div {
+    width: 100%;
+    margin-right: 0%;
+    margin-bottom: 20px; }
+  #contents .con3 {
+    width: 100%;
+    margin-right: 0%;
+    margin-bottom: 30px; }
+  #contents .con4 {
+    width: 100%; } }
+.footerWrap {
+  width: 100%;
+  background: url(../img/bgFooter.png) repeat-x 0px 0px; }
+  .footerWrap #footer {
+    width: 940px;
+    height: 184px;
+    margin: 0px auto;
+    position: relative; }
+
+/*tablet*/
+@media screen and (max-width: 960px) {
+  .footerWrap #footer {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
